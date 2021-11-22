@@ -1,7 +1,6 @@
 \ProvidesClass{zjureport}
 \LoadClass{ctexart}
-\RequirePackage{xeCJK}
-\RequirePackage{CJKnumb}
+\RequirePackage{ctex}
 \RequirePackage{graphicx}
 \RequirePackage{geometry}
 \RequirePackage{titlesec}
@@ -18,7 +17,7 @@
 \linespread{1.2}
 \geometry{top=1in,bottom=1in,left=1in,right=1in}
 \setcounter{secnumdepth}{3}
-\renewcommand\thesection{\CJKnumber{\arabic{section}}、}
+\renewcommand\thesection{\zhnumber{\arabic{section}}、}
 \renewcommand\thesubsection{\arabic{subsection}.}
 \renewcommand\thesubsubsection{(\arabic{subsubsection})}
 \setlist[enumerate,1]{label=(\arabic*)}
@@ -118,14 +117,15 @@
 % 封面
 \newcommand{\makecover}{
   \begin{center}
-    \begin{center}
-      \includegraphics[width=0.8\linewidth]{cover.png}
-    \end{center}
+    \begin{figure}[h]
+      \centerline{\includegraphics[width=0.7\linewidth]{cover.png}}
+      \centerline{\includegraphics[width=0.3\linewidth]{zju_badge.png}}
+    \end{figure}
     \vspace{1cm}
     \bfseries\huge{本科实验报告}\\
     \vspace{0.5cm}
     \bfseries\Large{\@expname}
-    \vspace{3cm}
+    \vspace{1.5cm}
     \begin{center}
       \Large
       \linespread{2}
@@ -140,7 +140,7 @@
         \bfseries{指导老师：} & \@instructor  \\ \cline{2-2}
       \end{tabular}
     \end{center}
-    \vspace{2cm}
+    \vspace{1cm}
     \Large{\@date}
   \end{center}
   \thispagestyle{empty}
