@@ -110,7 +110,7 @@
     实验名称： & \zjuu[150pt]\@expname & 实验类型： &\zjuu[50pt]\@exptype & 同组学生姓名：& \zjuu[50pt]\@partner
   \end{tabular*}
 \end{table}
-\thispagestyle{empty}
+\thispagestyle{plain}
 
 }
 
@@ -131,7 +131,7 @@
       \linespread{2}
       \centering
       \renewcommand\arraystretch{1.6}
-      \begin{tabular}{p{3cm}p{6cm}}
+      \begin{tabular}{p{3cm}p{8cm}}
         \bfseries{课程名称：} & \@course \\ \cline{2-2}
         \bfseries{姓名：}     & \@name   \\ \cline{2-2}
         \bfseries{学院：}     & \@college \\ \cline{2-2}
@@ -140,9 +140,10 @@
         \bfseries{指导老师：} & \@instructor  \\ \cline{2-2}
       \end{tabular}
     \end{center}
-    \vspace{1cm}
+    \vspace{0.6cm}
     \Large{\@date}
   \end{center}
+  \setcounter{page}{0}
   \thispagestyle{empty}
   \newpage
 }
