@@ -23,7 +23,7 @@
 \setlist[enumerate,1]{label=(\arabic*)}
 \setlist[enumerate,2]{label=\alph*.}
 
-\setCJKmainfont[ItalicFont={KaiTi},BoldFont={SimHei}]{SimSun}
+\setCJKmainfont[ItalicFont={KaiTi},BoldFont={SimHei}]{Microsoft YaHei}
 
 \titleformat*{\section}{\large\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
